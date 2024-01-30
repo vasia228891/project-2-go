@@ -1,3 +1,3 @@
-module project2
+module project1
 
 go 1.21.6
