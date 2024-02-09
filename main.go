@@ -2,9 +2,18 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math"
 )
 
+func sqrt(x float64) string {
+	if x < 0 {
+		return sqrt(-x) + "i"
+	}
+	return fmt.Sprint(math.Sqrt(x))
+}
+
 func main() {
-	fmt.Println("My favorite number is", rand.Intn(10))
+	a := sqrt(2)
+	b := sqrt(-4)
+	fmt.Println(a, b)
 }
