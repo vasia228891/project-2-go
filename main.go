@@ -1,19 +1,35 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
-
-func sqrt(x float64) string {
-	if x < 0 {
-		return sqrt(-x) + "i"
-	}
-	return fmt.Sprint(math.Sqrt(x))
-}
+import "fmt"
 
 func main() {
-	a := sqrt(2)
-	b := sqrt(-4)
-	fmt.Println(a, b)
+	names := []string{
+		"Max",
+		"Vika",
+		"Nastia",
+		"Artem",
+		"Dima",
+		"Vlad",
+		"Kostia",
+		"Vitaliy",
+		"Stas",
+	}
+
+	names = append(names, "Vitaliy")
+	names = append(names, "Victoria")
+
+	fmt.Println(names)
+
+	var (
+		parni   []int
+		neparni []int
+	)
+
+	for i := 0; i <= 21; i++ {
+		if i%2 == 0 {
+			parni = append(neparni, i)
+		}
+
+	}
+	fmt.Println(parni)
 }
