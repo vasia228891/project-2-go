@@ -15,7 +15,7 @@ const (
 	requiredPoints    = 10
 	pointsPerQuestion = 5
 )
-
+// nigga shit
 var id uint64 = 1
 
 func main() {
